@@ -106,6 +106,7 @@ public class LoginActivity extends BaseActivity {
                             intent.putExtra("이름", name);
                             intent.putExtra("이메일",email);
                             intent.putExtra("폰번",phone);
+                            intent.putExtra("토큰",token);
 
                             startActivity(intent);
 
