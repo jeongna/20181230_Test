@@ -101,6 +101,14 @@ public class LoginActivity extends BaseActivity {
                             String email = user.getString("email");
                             String phone = user.getString("phone");
 
+                            Intent intent = new Intent(mContext, MainActivity.class);
+                            intent.putExtra("로그인아이디", user_id);
+                            intent.putExtra("이름", name);
+                            intent.putExtra("이메일",email);
+                            intent.putExtra("폰번",phone);
+
+                            startActivity(intent);
+
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
