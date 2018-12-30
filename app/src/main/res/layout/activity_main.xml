@@ -27,6 +27,7 @@
         android:textColor="@color/tomato"/>
 
     <EditText
+        android:id="@+id/userEdt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
@@ -39,12 +40,14 @@
         android:text="Password"/>
 
     <EditText
+        android:id="@+id/userPwEdt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="비밀번호를 입력하세요."
         android:inputType="textPassword"/>
 
     <Button
+        android:id="@+id/loginBtn"
         android:layout_marginTop="12dp"
         android:layout_width="match_parent"
         android:layout_height="52dp"
@@ -57,6 +60,7 @@
         >
 
         <TextView
+            android:id="@+id/findPwTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="비밀번호 찾기"/>
@@ -67,6 +71,7 @@
             android:layout_weight="1"/>
 
         <TextView
+            android:id="@+id/signUpTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/tomato"
